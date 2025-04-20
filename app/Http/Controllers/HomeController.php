@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 
@@ -29,10 +30,10 @@ class HomeController extends Controller
 
     public function getUser()
     {
-        Auth::user()->token_get_all;
+        $user_list = User::select("id")->get();
         return response()->json([
+            'userList' => $user_list,
             'id' => Auth::user()->id,
-            'token' => Auth::user()->token_get_all,
         ]);
     }
 }

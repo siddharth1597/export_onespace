@@ -9,7 +9,7 @@
     'name' => 'Laravel',
     'env' => 'local',
     'debug' => true,
-    'url' => 'http://localhost',
+    'url' => 'https://onespace.inventory-software.in/',
     'frontend_url' => 'http://localhost:3000',
     'asset_url' => NULL,
     'timezone' => 'UTC',
@@ -223,7 +223,7 @@
       array (
         'driver' => 'sqlite',
         'url' => NULL,
-        'database' => 'export_onepsace',
+        'database' => 'export_onespace',
         'prefix' => '',
         'foreign_key_constraints' => true,
         'busy_timeout' => NULL,
@@ -236,7 +236,7 @@
         'url' => NULL,
         'host' => '127.0.0.1',
         'port' => '3308',
-        'database' => 'export_onepsace',
+        'database' => 'export_onespace',
         'username' => 'root',
         'password' => '',
         'unix_socket' => '',
@@ -256,7 +256,7 @@
         'url' => NULL,
         'host' => '127.0.0.1',
         'port' => '3308',
-        'database' => 'export_onepsace',
+        'database' => 'export_onespace',
         'username' => 'root',
         'password' => '',
         'unix_socket' => '',
@@ -276,7 +276,7 @@
         'url' => NULL,
         'host' => '127.0.0.1',
         'port' => '3308',
-        'database' => 'export_onepsace',
+        'database' => 'export_onespace',
         'username' => 'root',
         'password' => '',
         'charset' => 'utf8',
@@ -291,7 +291,7 @@
         'url' => NULL,
         'host' => '127.0.0.1',
         'port' => '3308',
-        'database' => 'export_onepsace',
+        'database' => 'export_onespace',
         'username' => 'root',
         'password' => '',
         'charset' => 'utf8',
@@ -350,7 +350,7 @@
       array (
         'driver' => 'local',
         'root' => '/home/fnp/my_projects/calculator/export_onespace/storage/app/public',
-        'url' => 'http://localhost/storage',
+        'url' => 'https://onespace.inventory-software.in//storage',
         'visibility' => 'public',
         'throw' => false,
         'report' => false,
@@ -509,7 +509,7 @@
         'username' => NULL,
         'password' => NULL,
         'timeout' => NULL,
-        'local_domain' => 'localhost',
+        'local_domain' => 'onespace.inventory-software.in',
       ),
       'ses' => 
       array (
@@ -658,8 +658,8 @@
   'session' => 
   array (
     'driver' => 'database',
-    'lifetime' => 120,
-    'expire_on_close' => false,
+    'lifetime' => 3,
+    'expire_on_close' => true,
     'encrypt' => false,
     'files' => '/home/fnp/my_projects/calculator/export_onespace/storage/framework/sessions',
     'connection' => NULL,
@@ -801,7 +801,7 @@
       2 => '127.0.0.1',
       3 => '127.0.0.1:8000',
       4 => '::1',
-      5 => 'localhost',
+      5 => 'onespace.inventory-software.in',
     ),
     'guard' => 
     array (

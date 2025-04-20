@@ -26,6 +26,11 @@ Route::get('/clear-cache', function () {
     return redirect()->back();
 })->name('clear-cache');
 
+Route::get('/logout-session', function () {
+    Auth::logout();
+    return redirect('/login');
+})->name('logout-session');
+
 Route::group(['middleware' => ['web']], function () {
 
     // Route::middleware(['auth:sanctum', 'verified'])->get('/home', [HomeController::class, 'index'])->name('home');
