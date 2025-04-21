@@ -1,6 +1,5 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react';
-import { Link } from 'react-router-dom';
 
 const Home = () => {
     const [id, setId] = useState("");
@@ -13,6 +12,7 @@ const Home = () => {
     }, []);
 
     useEffect(() => {
+        console.log(id, import.meta.env.VITE_USER_CALCULATOR, import.meta.env.VITE_USER_TRACKER, import.meta.env.VITE_USER_INVENTORY);
         if (id == import.meta.env.VITE_USER_CALCULATOR) {
             window.location.href = `${import.meta.env.VITE_APP_CALCULATOR_URL}${autoLoginUrl}${id}`;
         }
@@ -31,7 +31,6 @@ const Home = () => {
                     Redirecting...
                 </div>
             </div>
-            <hr />
         </div>
     );
 }
