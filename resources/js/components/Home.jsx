@@ -12,14 +12,14 @@ const Home = () => {
     }, []);
 
     useEffect(() => {
-        console.log(id, import.meta.env.VITE_USER_CALCULATOR, import.meta.env.VITE_USER_TRACKER, import.meta.env.VITE_USER_INVENTORY);
-        if (id == import.meta.env.VITE_USER_CALCULATOR) {
+        console.log(id, import.meta.env.VITE_USER_CALCULATOR2, import.meta.env.VITE_USER_TRACKER2, import.meta.env.VITE_USER_INVENTORY2);
+        if (id == import.meta.env.VITE_USER_CALCULATOR || id == import.meta.env.VITE_USER_CALCULATOR2) {
             window.location.href = `${import.meta.env.VITE_APP_CALCULATOR_URL}${autoLoginUrl}${id}`;
         }
-        else if (id == import.meta.env.VITE_USER_TRACKER) {
+        else if (id == import.meta.env.VITE_USER_TRACKER || id == import.meta.env.VITE_USER_TRACKER2) {
             window.location.href = `${import.meta.env.VITE_APP_TRACKER_URL}${autoLoginUrl}${id}`;
         }
-        else if (id == import.meta.env.VITE_USER_INVENTORY) {
+        else if (id == import.meta.env.VITE_USER_INVENTORY || id == import.meta.env.VITE_USER_INVENTORY2) {
             window.location.href = `${import.meta.env.VITE_APP_INVENTORY_URL}${autoLoginUrl}${id}`;
         }
     }, [id])
