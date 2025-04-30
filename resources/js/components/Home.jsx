@@ -22,6 +22,9 @@ const Home = () => {
         else if (id == import.meta.env.VITE_USER_INVENTORY || id == import.meta.env.VITE_USER_INVENTORY2) {
             window.location.href = `${import.meta.env.VITE_APP_INVENTORY_URL}${autoLoginUrl}${id}`;
         }
+        else if (id == import.meta.env.VITE_USER_SALES || id == import.meta.env.VITE_USER_SALES2) {
+            window.location.href = `${import.meta.env.VITE_APP_SALES_URL}${autoLoginUrl}${id}`;
+        }
     }, [id])
 
     return (
