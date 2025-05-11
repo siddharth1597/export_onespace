@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="<?php echo e(str_replace('_', '-', app()->getLocale())); ?>">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -19,9 +20,9 @@
 </head>
 <body>
     <div id="app">
-        <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark shadow-sm">
             <div class="container">
-                <a class="navbar-brand" href="<?php echo e(url('/')); ?>">
+                <a class="navbar-brand text-white" href="<?php echo e(url('/')); ?>">
                     <?php echo e(config('app.name', 'Export OneSpace')); ?>
 
                 </a>
@@ -41,18 +42,18 @@
                         <?php if(auth()->guard()->guest()): ?>
                         <?php if(Route::has('login')): ?>
                         <li class="nav-item">
-                            <a class="nav-link" href="<?php echo e(route('login')); ?>"><?php echo e(__('Login')); ?></a>
+                            <a class="nav-link text-white" href="<?php echo e(route('login')); ?>"><?php echo e(__('Login')); ?></a>
                         </li>
                         <?php endif; ?>
 
                         <?php if(Route::has('register')): ?>
                         <li class="nav-item">
-                            <a class="nav-link" href="<?php echo e(route('register')); ?>"><?php echo e(__('Register')); ?></a>
+                            <a class="nav-link text-white" href="<?php echo e(route('register')); ?>"><?php echo e(__('Register')); ?></a>
                         </li>
                         <?php endif; ?>
                         <?php else: ?>
                         <li class="nav-item dropdown">
-                            <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                            <a id="navbarDropdown" class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
                                 <?php echo e(Auth::user()->name); ?>
 
                             </a>
@@ -79,6 +80,12 @@
         <main class="py-4">
             <?php echo $__env->yieldContent('content'); ?>
         </main>
+        <!-- <footer class="bg-light text-center text-lg-start">
+            <div class="text-center p-3">
+                © 2025 Copyright:
+                <a class="text-dark" href="https://www.sidtechtalks.in" target="_blank">Sidtechtalks.in</a>
+            </div>
+        </footer> -->
     </div>
 </body>
 </html>

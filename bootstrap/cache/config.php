@@ -6,10 +6,10 @@
   14 => 'view',
   'app' => 
   array (
-    'name' => 'Laravel',
-    'env' => 'local',
-    'debug' => true,
-    'url' => 'https://onespace.inventory-software.in/',
+    'name' => 'ExportOneSpace',
+    'env' => 'live',
+    'debug' => false,
+    'url' => 'https://onespace.pinksteel.in/',
     'frontend_url' => 'http://localhost:3000',
     'asset_url' => NULL,
     'timezone' => 'UTC',
@@ -17,7 +17,7 @@
     'fallback_locale' => 'en',
     'faker_locale' => 'en_US',
     'cipher' => 'AES-256-CBC',
-    'key' => 'base64:wVRws6307NzNZzasUg0q6j+RZX4UWR2dADl8FSNgWiM=',
+    'key' => 'base64:Oy5wf/+JH5R3WEeciktyhre7/Zn1xhzUQjiNIGki4IM=',
     'previous_keys' => 
     array (
     ),
@@ -212,7 +212,7 @@
         'driver' => 'octane',
       ),
     ),
-    'prefix' => 'laravel_cache_',
+    'prefix' => 'exportonespace_cache_',
   ),
   'database' => 
   array (
@@ -223,7 +223,7 @@
       array (
         'driver' => 'sqlite',
         'url' => NULL,
-        'database' => 'export_onespace',
+        'database' => 'u266218544_onespace',
         'prefix' => '',
         'foreign_key_constraints' => true,
         'busy_timeout' => NULL,
@@ -235,10 +235,10 @@
         'driver' => 'mysql',
         'url' => NULL,
         'host' => '127.0.0.1',
-        'port' => '3308',
-        'database' => 'export_onespace',
-        'username' => 'root',
-        'password' => '',
+        'port' => '3306',
+        'database' => 'u266218544_onespace',
+        'username' => 'u266218544_sid_onespace',
+        'password' => 'Siddharth$123',
         'unix_socket' => '',
         'charset' => 'utf8mb4',
         'collation' => 'utf8mb4_unicode_ci',
@@ -255,10 +255,10 @@
         'driver' => 'mariadb',
         'url' => NULL,
         'host' => '127.0.0.1',
-        'port' => '3308',
-        'database' => 'export_onespace',
-        'username' => 'root',
-        'password' => '',
+        'port' => '3306',
+        'database' => 'u266218544_onespace',
+        'username' => 'u266218544_sid_onespace',
+        'password' => 'Siddharth$123',
         'unix_socket' => '',
         'charset' => 'utf8mb4',
         'collation' => 'utf8mb4_unicode_ci',
@@ -275,10 +275,10 @@
         'driver' => 'pgsql',
         'url' => NULL,
         'host' => '127.0.0.1',
-        'port' => '3308',
-        'database' => 'export_onespace',
-        'username' => 'root',
-        'password' => '',
+        'port' => '3306',
+        'database' => 'u266218544_onespace',
+        'username' => 'u266218544_sid_onespace',
+        'password' => 'Siddharth$123',
         'charset' => 'utf8',
         'prefix' => '',
         'prefix_indexes' => true,
@@ -290,10 +290,10 @@
         'driver' => 'sqlsrv',
         'url' => NULL,
         'host' => '127.0.0.1',
-        'port' => '3308',
-        'database' => 'export_onespace',
-        'username' => 'root',
-        'password' => '',
+        'port' => '3306',
+        'database' => 'u266218544_onespace',
+        'username' => 'u266218544_sid_onespace',
+        'password' => 'Siddharth$123',
         'charset' => 'utf8',
         'prefix' => '',
         'prefix_indexes' => true,
@@ -310,7 +310,7 @@
       'options' => 
       array (
         'cluster' => 'redis',
-        'prefix' => 'laravel_database_',
+        'prefix' => 'exportonespace_database_',
         'persistent' => false,
       ),
       'default' => 
@@ -350,7 +350,7 @@
       array (
         'driver' => 'local',
         'root' => '/home/fnp/my_projects/calculator/export_onespace/storage/app/public',
-        'url' => 'https://onespace.inventory-software.in//storage',
+        'url' => 'https://onespace.pinksteel.in//storage',
         'visibility' => 'public',
         'throw' => false,
         'report' => false,
@@ -509,7 +509,7 @@
         'username' => NULL,
         'password' => NULL,
         'timeout' => NULL,
-        'local_domain' => 'onespace.inventory-software.in',
+        'local_domain' => 'onespace.pinksteel.in',
       ),
       'ses' => 
       array (
@@ -559,7 +559,7 @@
     'from' => 
     array (
       'address' => 'hello@example.com',
-      'name' => 'Laravel',
+      'name' => 'ExportOneSpace',
     ),
     'markdown' => 
     array (
@@ -670,7 +670,7 @@
       0 => 2,
       1 => 100,
     ),
-    'cookie' => 'laravel_session',
+    'cookie' => 'exportonespace_session',
     'path' => '/',
     'domain' => NULL,
     'secure' => NULL,
@@ -801,7 +801,7 @@
       2 => '127.0.0.1',
       3 => '127.0.0.1:8000',
       4 => '::1',
-      5 => 'onespace.inventory-software.in',
+      5 => 'onespace.pinksteel.in',
     ),
     'guard' => 
     array (

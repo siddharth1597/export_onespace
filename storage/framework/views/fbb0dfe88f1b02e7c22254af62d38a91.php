@@ -2,8 +2,8 @@
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
-            <div class="card">
-                <div class="card-header"><?php echo e(__('Login')); ?></div>
+            <div class="card bg-white">
+                <div class="card-header"><?php echo e(__('OneSpace Login')); ?></div>
 
                 <div class="card-body">
                     <form method="POST" action="<?php echo e(route('login')); ?>">
@@ -80,7 +80,7 @@ unset($__errorArgs, $__bag); ?>
 
                         <div class="row mb-0">
                             <div class="col-md-8 offset-md-4">
-                                <button type="submit" class="btn btn-primary">
+                                <button type="submit" class="btn btn-dark px-4">
                                     <?php echo e(__('Login')); ?>
 
                                 </button>
